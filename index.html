@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoPrime - Concessionária de Carros</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --primary-color: #d32f2f; /* Vermelho para ação e confiança */
+      --secondary-color: #212121; /* Preto para sofisticação */
+      --light-color: #f5f5f5; /* Cinza claro para equilíbrio */
+      --accent-color: #ffc107; /* Amarelo para atenção */
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background-color: var(--light-color);
+      color: var(--secondary-color);
+    }
+
+    .top-bar {
+      background: var(--secondary-color);
+      color: white;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .top-bar a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    .navbar {
+      background: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--primary-color);
+    }
+
+    .navbar nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: var(--secondary-color);
+      font-weight: 500;
+    }
+
+    .hero {
+      background: url('https://s2-g1.glbimg.com/MxOM_IVokJVkZhxGkLxjCpe7YUg=/0x0:1280x750/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2020/V/m/BCSYp3Ss6mV6YCO1myHw/capa-materia-showroom-comeri-santos.png') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      z-index: 1;
+      font-size: 48px;
+    }
+
+    .hero a {
+      z-index: 1;
+      margin-top: 20px;
+      background: var(--accent-color);
+      padding: 12px 25px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      color: var(--secondary-color);
+    }
+
+    .carros {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .carro {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .carro img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .carro .info {
+      padding: 15px;
+    }
+
+    .carro .info h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+    }
+
+    .carro .info p {
+      font-size: 14px;
+      color: gray;
+    }
+
+    footer {
+      background: var(--secondary-color);
+      color: white;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    footer .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: var(--accent-color);
+    }
+
+    footer nav a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    footer .endereco {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <div>📞 (11) 97653-7649 | ✉️     contatoautoprime@gmail.com</div>
+    <div>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="logo">AutoPrime</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="comprar.html">Comprar</a>
+      <a href="vender.html">Vender</a>
+      <a href="servicos.html">Serviços</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h1>Seu próximo carro está aqui!</h1>
+    <a href="https://wa.me/5511943766547" target="_blank">Compre agora</a>
+  </div>
+
+  <section class="carros">
+    <div class="carro">
+      <img src="https://www.webmotors.com.br/rbx/_next/image?url=https%3A%2F%2Fimage.webmotors.com.br%2F_fotos%2Fanunciousados%2Fgigante%2F2025%5C202501%5C20250117%5Cvolkswagen-gol-1.0-i-8v-gasolina-2p-manual-WMIMAGEM20194349051.jpg&w=640&q=75" alt="Carro 1">
+      <div class="info">
+        <h3>Wolksvagen Gol G2 1999</h3>
+        <p>R$ 8.500 | Hatch | Gasolina | Manual</p>
+      </div>
+    </div>
+    <div class="carro">
+      <img src="https://static.wixstatic.com/media/d24ee3_29010a08991649debd7a8624b0a1531d~mv2.jpeg/v1/fill/w_980,h_630,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/d24ee3_29010a08991649debd7a8624b0a1531d~mv2.jpeg" alt="Carro 2">
+      <div class="info">
+        <h3>Honda Civic Si 2008</h3>
+        <p>R$ 84.999 | Sedan | Gasolina | Manual</p>
+      </div>
+    </div>
+    <div class="carro">
+      <img src="https://www.picellileiloes.com.br/arquivos/leiloes/lotes/imagens/5f4fd0ebf177e.peg" alt="Carro 3">
+      <div class="info">
+        <h3>Wolksvagen Kombi 1998</h3>
+        <p>R$ 29.000 | Furgão | Gasolina | Manual</p>
+      </div>
+    </div>
+    <div class="carro">
+        <img src="https://lartbr.com.br/wp-content/uploads/2024/02/IMG_5484.jpg" alt="Carro 4">
+        <div class="info">
+          <h3>BMW 320i 2.0 GP 16V TURBO 2013</h3>
+          <p>R$ 209.999 | Sedan | Gasolina | Sequêncial</p>
+        </div>
+    </div>
+    <div class="carro">
+        <img src="https://www.comprecar.com.br/storage/news/featured/L9JT5_d7xn_297j.jpg" alt="Carro 5  ">
+        <div class="info">
+          <h3>Honda Fit 2015</h3>
+          <p>R$ 54.800 | Hatch | Flex | Automático</p>
+        </div>
+    <!-- Adicione mais carros conforme necessário -->
+  </section>
+
+  <footer>
+    <div class="logo">AutoPrime</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="comprar.html">Comprar</a>       
+      <a href="vender.html">Vender</a>
+      <a href="servicos.html">Serviços</a>
+    </nav>
+    <div class="endereco">
+      <p>Aveninda Sapopemba - São Paulo/SP</p>
+      <p>CEP: 15436-000</p>
+    </div>
+  </footer>
+</body>
+
+</html>
